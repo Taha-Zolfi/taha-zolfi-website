@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/iranian-sans');
+
+body {
+    background-image: url("e.jpg");
+    min-height: 100%;
+}
+
+h1 {
+    margin: -10px;
+    font: 5em lalezar;
+    color:navy;
+    text-align: center;
+}
+
+* {
+    font-family: 'Iranian Sans', sans-serif;
+}
+
+.asl {
+    margin: auto;
+    width: 1100px;
+    height: 600px;
+    background: radial-gradient(135deg, rgb(255, 0, 128),rgb(183, 0, 255));
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px, solid , rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37)
+}
+
+form {
+    display: flex;  
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width: 600px;
+    border-radius:10px ;
+}
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    outline: none;
+    background:#f5f5f5 ;
+    font-size: 16px;
+    border-radius: 20px;
+}
+.btn {
+    background-color:aquamarine;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
