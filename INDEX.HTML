@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طاها زلفی</title>
+
+
+
+
+</head>
+
+
+<body>
+
+
+
+
+    <style>
+
+        body {
+            background-color: black;
+        }
+        *{
+        margin: 0;
+        padding: 0;
+        font-family : kalameh;
+        font-weight: bolder;
+     
+        }
+
+        .full-screen{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        }
+
+        .full-screen video{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+        }
+
+        .content{
+            color: white;
+            text-align: center;
+
+        }
+
+        .animate-charcter{
+    text-transform: uppercase;
+    background-image: linear-gradient(
+        -225deg,
+        #fff800 0%,
+        #ffd700 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 2s linear infinite;
+    display: inline-block;
+    font-size: 250px;
+    }
+
+    @keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+    }
+
+   .fpage p {
+  font-size: 2em;
+  font-family: iransansx;
+  font-weight: 550;
+  animation: test 4s ;
+  animation-iteration-count: 3000;
+  animation-direction: alternate;
+}
+
+@keyframes test {
+  0%   {color:rgb(255, 255, 255); left:0px; top:0px;}
+  25%  {color:yellow; left:200px; top:0px;}
+  50%  {color:cyan; left:200px; top:200px;}
+  75%  {color:greenyellow; left:0px; top:200px;}
+  100% {color:orangered; left:0px; top:0px;}
+}
+
+.spage {
+    font-size: 2em;
+    background-color: black;
+    color: white;
+
+}
+.spage img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+}
+.spage h1 {
+    font-size: 3em;
+    text-align: right;
+    margin-right: 30px;
+}
+.spage p{
+    font-family: iransansx;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+
+.tpage {
+    background-color: rgb(0, 110, 255);
+    height: 60px;
+
+}
+.tpage h1 {
+    margin-left: 10px;
+    margin-top: 10px;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    float: left
+}
+.tpage img {
+    margin-top: 10px;
+    width: 40px;
+    float: left;
+    margin-left: 10px;
+}
+
+nav {
+    margin-top: -200px;
+    margin-left: 1150px;
+}
+
+nav a{
+    font-family: iransansx;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+    color:white;
+    
+
+
+}
+nav li {
+margin: 20px;
+
+}
+nav * {
+display: inline;
+}
+nav a:hover {
+    color: #ffd700;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.bioe {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media screen and (max-width: 600px){
+    .animate-charcter{
+        margin-top: 150px;
+        font-size: 100px;
+
+    }
+    .fpage p {
+        font-size: 21px;
+        font-weight: bolder;
+    }
+
+    .spage h1 {
+        font-size: 2em;
+    }
+    .spage p {
+        font-size: 30px;
+    }
+    .bioe {
+        width: 420px;
+    }
+    .tpage {
+        height: 105px;
+    }
+    #gm {
+        font-size: 25px;
+    }
+    .gmp {
+        float: left;
+    }
+    .gmp img {
+        margin-left: -40px;
+    }
+    nav{
+        margin-left: 250px ;
+        margin-top: -290px;
+    }
+    
+}
+
+
+    </style>
+
+
+
+
+
+    <div class="fpage">
+        <div class="full-screen">
+            <video src="bgcat.mp4" autoplay muted loop></video>
+
+            <div class="content">
+
+                <nav>
+                    <li><a href="#tpage" > ارتباط </a></li>
+                    <li><a href="https://github.com/Taha-Zolfi">رزومه</a></li>
+                </nav>
+
+                <div class="container">
+                    <div class="row">
+                      <div class="col-md-12 text-center">
+                        <h3 class="animate-charcter">طاها زلفی</h3>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  
+                  <p>برنامه نویس ، گرافیست ، ویدیو ادیتور ، طراح وب </p>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="spage">
+        <h1>بـیوگرافی</h1>
+        <div class="bioe">
+        <p>متولد 86 ، تحصیل در رشته تولید محتوا ، از همون بچگی به کامپیوتر علاقه داشتم و درست کردن مشکلات کوچیک کامپیوتر پدرم کار من بود ، در 9 سالگی فتوشاپ رو یاد گرفتم در تابستون سال 1401 برنامه نویسی رو با مقدماتی جاوا شروع کردم که با نمره 70 از 100 تمومش کردم و رفتم سراغ پایتون و پایتون مقدماتی رو با نمره 80 از 100 تموم کردم و در همین حین طراحی وب رو با اچ تی ام ال سی اس اس با یوتوب شروع کردم </p>
+    </div>
+    </div>
+    <br>
+    <div class="tpage" id="tpage">
+        <img src="https://www.freeiconspng.com/thumbs/phone-icon/phone-icon-clip-art--royalty--7.png">
+        <h1>09906648574</h1>
+        <div class="gmp">
+        <img src="https://www.seekpng.com/png/full/41-415678_white-snapchat-logo-png.png" >
+        <h1 id="gm">tahazolfi01@gmail.com</h1>
+    </div>
+    </div>
+</body>
+</html>
