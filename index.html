@@ -13,12 +13,25 @@
 </head>
 
 
+
 <body>
 
 
 
 
     <style>
+@font-face {
+	font-family: iransansx !important;
+	font-style: normal;
+	font-weight: bold;
+	src: url('IRANSansX-Bold.woff') format('woff');
+}
+@font-face {
+	font-family: kalameh !important;
+	font-style: normal;
+	font-weight: bold;
+	src: url('KalamehWeb-Black.woff') format('woff');
+}
 
         body {
             background-color: black;
@@ -26,7 +39,7 @@
         *{
         margin: 0;
         padding: 0;
-        font-family : kalameh;
+        font-family: kalameh;
         font-weight: bolder;
      
         }
@@ -51,7 +64,6 @@
         }
 
         .content{
-            color: white;
             text-align: center;
 
         }
@@ -85,7 +97,7 @@
   font-family: iransansx;
   font-weight: 550;
   animation: test 4s ;
-  animation-iteration-count: 3000;
+  animation-iteration-count: infinite;
   animation-direction: alternate;
 }
 
@@ -122,8 +134,9 @@
 }
 
 .tpage {
-    background-color: rgb(0, 110, 255);
+    background-image: linear-gradient(to right,  rgb(55, 0, 255), black);
     height: 60px;
+    width: 100%;
 
 }
 .tpage h1 {
@@ -169,10 +182,41 @@ html {
   scroll-behavior: smooth;
 }
 
+
+a {
+  position: relative;
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #ffd700;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
 .bioe {
     width: 600px;
     margin-right: auto;
     margin-left: auto;
+}
+
+.tpage h2 {
+    float: right;
+    font-size: 40px;
+    color:black;
+    margin-top: -8px;
 }
 
 @media screen and (max-width: 600px){
@@ -214,6 +258,17 @@ html {
     
 }
 
+ ::-webkit-scrollbar{
+    background: transparent;
+    width: 0.7em;
+    border-radius: 15px;
+
+ }
+ ::-webkit-scrollbar-thumb{
+    background-image: linear-gradient( transparent,purple);
+    border-radius: 15px;
+ }
+
 
     </style>
 
@@ -241,7 +296,7 @@ html {
                     </div>
                   </div>
                   
-                  <p>برنامه نویس ، گرافیست ، ویدیو ادیتور ، طراح وب </p>
+                  <p>برنامه نویس | گرافیست | طراح وب </p>
                 
             </div>
         </div>
@@ -260,6 +315,9 @@ html {
         <div class="gmp">
         <img src="https://www.seekpng.com/png/full/41-415678_white-snapchat-logo-png.png" >
         <h1 id="gm">tahazolfi01@gmail.com</h1>
+
+        
+
     </div>
     </div>
 </body>
