@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="Mp9ubdc1azv7hNRy44fQPWhGitB6DY9lsfm95hhCxes" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>طاها زلفی</title>
 
-
-
-
+    <link rel="icon" href="gorbe.jpg" type="image/icon type">
+    <meta name="description" content="برنامه نویس گرافیست طراح وب">
+    <meta name="keywords" content="طاهازلفی, طاها زلفی, tahazolfi, taha zolfi">
+    <meta name="author" content="طاها زلفی">
 </head>
-
 
 
 <body>
@@ -21,15 +20,11 @@
 
     <style>
 @font-face {
-	font-family: iransansx !important;
-	font-style: normal;
-	font-weight: bold;
+	font-family: irsansx;
 	src: url('IRANSansX-Bold.woff') format('woff');
 }
 @font-face {
-	font-family: kalameh !important;
-	font-style: normal;
-	font-weight: bold;
+	font-family: kalame;
 	src: url('KalamehWeb-Black.woff') format('woff');
 }
 
@@ -37,9 +32,8 @@
             background-color: black;
         }
         *{
-        margin: 0;
-        padding: 0;
-        font-family: kalameh;
+        margin: auto;
+        font-family: kalame;
         font-weight: bolder;
      
         }
@@ -48,9 +42,7 @@
         width: 100%;
         height: 100vh;
         overflow: hidden;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+
         }
 
         .full-screen video{
@@ -63,26 +55,18 @@
         z-index: -1;
         }
 
-        .content{
-            text-align: center;
-
-        }
 
         .animate-charcter{
-    text-transform: uppercase;
     background-image: linear-gradient(
         -225deg,
         #fff800 0%,
         #ffd700 100%
     );
-    background-size: auto auto;
-    background-clip: border-box;
     background-size: 200% auto;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: textclip 2s linear infinite;
-    display: inline-block;
     font-size: 250px;
     }
 
@@ -94,11 +78,15 @@
 
    .fpage p {
   font-size: 2em;
-  font-family: iransansx;
+  font-family: irsansx;
   font-weight: 550;
   animation: test 4s ;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  text-align: center;
+}
+.fpage h3{
+    text-align: center;
 }
 
 @keyframes test {
@@ -127,7 +115,7 @@
     margin-right: 30px;
 }
 .spage p{
-    font-family: iransansx;
+    font-family: irsansx;
     font-weight: bold;
     font-size: 30px;
     text-align: center;
@@ -153,31 +141,6 @@
     margin-left: 10px;
 }
 
-nav {
-    margin-top: -200px;
-    margin-left: 1150px;
-}
-
-nav a{
-    font-family: iransansx;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 30px;
-    color:white;
-    
-
-
-}
-nav li {
-margin: 20px;
-
-}
-nav * {
-display: inline;
-}
-nav a:hover {
-    color: #ffd700;
-}
 html {
   scroll-behavior: smooth;
 }
@@ -185,25 +148,9 @@ html {
 
 a {
   position: relative;
-}
-
-a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-    background-color: #ffd700;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-  }
-
-a:hover::before {
-  transform-origin: left;
-  transform: scaleX(1);
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 .bioe {
@@ -219,15 +166,19 @@ a:hover::before {
     margin-top: -8px;
 }
 
-@media screen and (max-width: 600px){
+.row a {
+    color: yellow;text-decoration: none;font-size: 30px;
+}
+
+@media screen and (max-width: 360px){
     .animate-charcter{
-        margin-top: 150px;
-        font-size: 100px;
+        margin-top: 200px;
+        font-size: 85px;
+
 
     }
-    .fpage p {
-        font-size: 21px;
-        font-weight: bolder;
+    .fpage p{
+        font-size: 20px;
     }
 
     .spage h1 {
@@ -251,9 +202,12 @@ a:hover::before {
     .gmp img {
         margin-left: -40px;
     }
-    nav{
-        margin-left: 250px ;
-        margin-top: -290px;
+
+    .full-screen video {
+        width:inherit;
+    }
+    .bioe {
+        width: fit-content;
     }
     
 }
@@ -270,44 +224,47 @@ a:hover::before {
  }
 
 
+.f1:hover{
+    transform: translate(-5px, -10px);
+    transition: transform 330ms ease-in-out;
+}
+
+#rez {
+    color: white;
+}
+#rez:hover {
+    color: #ffd700;
+}
+
     </style>
 
 
 
-
-
     <div class="fpage">
+
         <div class="full-screen">
             <video src="bgcat.mp4" autoplay muted loop></video>
 
-            <div class="content">
 
-                <nav>
-                    <li><a href="#tpage" > ارتباط </a></li>
-                    <li><a href="https://github.com/Taha-Zolfi">رزومه</a></li>
-                </nav>
 
-                <div class="container">
-                    <div class="row">
-                      <div class="col-md-12 text-center">
-                        <h3 class="animate-charcter">طاها زلفی</h3>
-                      </div>
-                      
-                    </div>
-                  </div>
-                  
-                  <p>برنامه نویس | گرافیست | طراح وب </p>
-                
+        <h3 class="animate-charcter">طاها زلفی</h3>
+
+        <p>برنامه نویس | گرافیست | طراح وب </p>
+
+
+
             </div>
         </div>
     </div>
 
+
     <div class="spage">
         <h1>بـیوگرافی</h1>
         <div class="bioe">
-        <p>متولد 86 ، تحصیل در رشته تولید محتوا ، از همون بچگی به کامپیوتر علاقه داشتم و درست کردن مشکلات کوچیک کامپیوتر پدرم کار من بود ، در 9 سالگی فتوشاپ رو یاد گرفتم در تابستون سال 1401 برنامه نویسی رو با مقدماتی جاوا شروع کردم که با نمره 70 از 100 تمومش کردم و رفتم سراغ پایتون و پایتون مقدماتی رو با نمره 80 از 100 تموم کردم و در همین حین طراحی وب رو با اچ تی ام ال سی اس اس با یوتوب شروع کردم </p>
+        <p>متولد 86 ، تحصیل در رشته تولید محتوا ، از همون بچگی به کامپیوتر علاقه داشتم و درست کردن مشکلات کوچیک کامپیوتر پدرم کار من بود ، در 9 سالگی فتوشاپ رو یاد گرفتم در تابستون سال 1401 برنامه نویسی رو با مقدماتی جاوا شروع کردم که با نمره 70 از 100 تمومش کردم و رفتم سراغ پایتون و پایتون مقدماتی رو با نمره کامل تموم کردم و در همین حین طراحی وب رو با اچ تی ام ال سی اس اس با یوتوب شروع کردم </p>
     </div>
     </div>
+
     <br>
     <div class="tpage" id="tpage">
         <img src="https://www.freeiconspng.com/thumbs/phone-icon/phone-icon-clip-art--royalty--7.png">
